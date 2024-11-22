@@ -17,30 +17,48 @@
 	</head>
 	<body>
 		<!-- TODO: Create landing page elements -->
-		<aside>
-			<h2>My First Blog</h2>
-		</aside>
+		<main>
+			<aside>
+				<h2>My First Blog</h2>
+			</aside>
 
-		<section>
-      <h2>What's on your mind?</h2>
-			<form>
-        <label>Username</label>
-        <input type="text">
+			<section>
+				<h2>What's on your mind?</h2>
+				<form>
+					<label for="username">Username</label>
+					<input id="username" type="text"/>
+
+					<label for="title">Title</label>
+					<input label="title" id="title" />
+
+					<label for="content">Content</label>
+					<textarea label="content" id="content" rows="3"></textarea>
+					
+					<input type="submit" />
+					<p id="error">Please complete the form</p>
+				</form>
+
+				<!-- <form>
+				<label>Username</label>
+				<input type="text" />
 			</form>
 
-      <form>
-        <label>Title</label>
-        <input type="text">
-      </form>
+			<form>
+				<label>Title</label>
+				<input type="text" />
+			</form>
 
-      <form>
-        <label>Content</label>
-        <textarea rows="3"></textarea>
-      </form>
+			<form>
+				<label>Content</label>
+				<textarea rows="3"></textarea>
+			</form>
 
-      <form>
-        <input type="submit">
-      </form>
-		</section>
+			<form>
+				<input type="submit" />
+			</form> -->
+
+				<!-- <p id="error">Please complete the form</p> -->
+			</section>
+		</main>
 	</body>
 </html>
