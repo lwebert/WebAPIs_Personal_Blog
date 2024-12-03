@@ -96,5 +96,6 @@ aside {
     opacity: .75;
     position: absolute;
     bottom: -2rem;
+    display: none; /*added this*/
   }
   
