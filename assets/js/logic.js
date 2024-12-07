@@ -1,5 +1,5 @@
 // TODO: Create logic to toggle the light/dark mode styles for the page and circle. The mode should be saved to local storage.
-const lightdarkEl = document.querySelector("#lightdarkmode");
+const lightdarkEl = document.querySelector("#toggle");
 
 lightdarkEl.addEventListener('click', function () {
 	let state = document.body.getAttribute('class');
@@ -8,12 +8,15 @@ lightdarkEl.addEventListener('click', function () {
 		state = 'light';
 		document.body.setAttribute('class', state);
 		lightdarkEl.textContent = '☀️'
+		document.documentElement.style.setProperty('--circle-color', '#ffb100'); //How we change :root variables in CSS
 
 	}
 	else if (state === 'light') {
 		state = 'dark';
 		document.body.setAttribute('class', state);
-		lightdarkEl.textContent = '🌑'
+		lightdarkEl.textContent = '🌑';
+		document.documentElement.style.setProperty('--circle-color', '#8570a5');
+
 	}
 })
 

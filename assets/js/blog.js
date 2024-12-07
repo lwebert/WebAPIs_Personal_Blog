@@ -29,11 +29,11 @@ function createBlogPostEl(username, title, content) {
 function noPosts() {
     let blogs = readLocalStorage();
     if (blogs.length === 0) {
-        const h1El = document.createElement("h1");
-        h1El.setAttribute('style', 'color:black');
-        h1El.textContent = "no blog posts are available!"
+        // const h1El = document.createElement("h1");
+        // h1El.setAttribute('style', 'color:black');
+        mainEl.textContent = "No Blog posts yet..."
 
-        mainEl.appendChild(h1El);
+        // mainEl.appendChild(h1El);
     }
 };
 
